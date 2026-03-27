@@ -2,6 +2,8 @@
 
 利用 Claude Code 的 Agent Teams 能力，让 AI teammates 玩一局完整的狼人杀。
 
+<img width="2456" height="1262" alt="image" src="https://github.com/user-attachments/assets/d8d3fd73-6881-445d-9e97-7a483dcd2dcc" />
+
 ## 快速开始
 
 ```
