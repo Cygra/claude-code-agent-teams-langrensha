@@ -1,38 +1,40 @@
 # claude-code-agent-teams-langrensha
 
-利用 Claude Code 的 Agent Teams 的能力让 teammates 玩狼人杀。
-Let teammates in Claude Code Agent teams play Werewolf (狼人杀) with each other.
+利用 Claude Code 的 Agent Teams 能力，让 AI teammates 玩一局完整的狼人杀。
 
-## Quick Start
+## 快速开始
 
 ```
 git clone https://github.com/Cygra/claude-code-agent-teams-langrensha ~/.claude/skills/langrensha
 ```
 
-Trigger it with something like "来一局狼人杀", "玩狼人杀", or "play Werewolf".
+用以下任意语句触发技能：「来一局狼人杀」、「我要玩狼人杀」、「play Werewolf」。
 
-## What is 狼人杀 (Werewolf)?
+## 游戏规则
 
-https://en.wikipedia.org/wiki/Mafia_(party_game)
+https://zh.wikipedia.org/wiki/%E7%8B%BC%E4%BA%BA%E6%9D%80
 
-A social deduction game where players are secretly assigned roles — wolves try to eliminate villagers, while villagers try to identify and vote out the wolves.
+狼人杀是一款社交推理游戏。玩家被秘密分配阵营——狼人想要淘汰所有好人，而好人需要找出并投票驱逐所有狼人。
 
-## Game Setup
+## 游戏配置
 
-7 AI agents play the game, moderated by you (team-lead) as the Sheriff (警长):
+本技能采用经典 **12人局**标准配置，由你（team-lead）扮演**警长**主持：
 
-| Role | Team | Count |
-|------|------|-------|
-| 🐺 狼人 Werewolf | Wolves | 2 |
-| 🔮 预言家 Seer | Villagers | 1 |
-| 🧪 女巫 Witch | Villagers | 1 |
-| 🏹 猎人 Hunter | Villagers | 1 |
-| 👤 平民 Villager | Villagers | 2 |
+| 角色 | 阵营 | 人数 | 技能 |
+|------|------|------|------|
+| 🐺 狼人 | 狼人 | 4 | 每晚击杀一名玩家 |
+| 🔮 预言家 | 好人（神职） | 1 | 每晚查验一名玩家的身份 |
+| 🧪 女巫 | 好人（神职） | 1 | 解药救人 + 毒药杀人，各一次 |
+| 🏹 猎人 | 好人（神职） | 1 | 被淘汰时可开枪带走一人 |
+| 🛡️ 守卫 | 好人（神职） | 1 | 每晚守护一名玩家免受击杀 |
+| 👤 平民 | 好人 | 4 | 无特殊技能，靠推理和投票 |
 
-## What is Claude Code agent teams?
+玩家代号为 player-1 ~ player-12，代号本身不透露角色，保证推理的公平性。
+
+## 关于 Claude Code Agent Teams
 
 https://code.claude.com/docs/en/agent-teams
 
 ---
 
-*Related: [Connect Four](https://github.com/Cygra/claude-code-agent-teams-connect-four) · [Tic-Tac-Toe](https://github.com/Cygra/claude-code-agent-teams-tic-tac-toe)*
+*相关项目：[四子棋](https://github.com/Cygra/claude-code-agent-teams-connect-four) · [井字棋](https://github.com/Cygra/claude-code-agent-teams-tic-tac-toe)*
