@@ -4,6 +4,9 @@
 
 <img width="2456" height="1262" alt="image" src="https://github.com/user-attachments/assets/d8d3fd73-6881-445d-9e97-7a483dcd2dcc" />
 
+<img width="721" height="707" alt="image" src="https://github.com/user-attachments/assets/cd22ec19-c138-473d-8040-d510cd8c22c3" />
+
+
 ## 快速开始
 
 ```
